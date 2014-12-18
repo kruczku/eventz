@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *btnLogin;
+@property (strong, nonatomic) IBOutlet UITextField *tfLogin;
+@property (strong, nonatomic) IBOutlet UITextField *tfPassword;
 
 @end
 
