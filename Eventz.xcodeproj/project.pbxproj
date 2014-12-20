@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF79319B1A455CCB002DD617 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = CF79319A1A455CCB002DD617 /* UserService.m */; };
+		CF79319F1A455DF6002DD617 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CF79319E1A455DF6002DD617 /* User.m */; };
+		CF7931A31A456120002DD617 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7931A21A456120002DD617 /* StringUtils.m */; };
+		CF7931A61A4561FB002DD617 /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7931A51A4561FB002DD617 /* UIUtils.m */; };
 		CFA02B961A4378F1005117EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA02B951A4378F1005117EA /* main.m */; };
 		CFA02B991A4378F1005117EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA02B981A4378F1005117EA /* AppDelegate.m */; };
-		CFA02B9C1A4378F1005117EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA02B9B1A4378F1005117EA /* ViewController.m */; };
+		CFA02B9C1A4378F1005117EA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA02B9B1A4378F1005117EA /* LoginViewController.m */; };
 		CFA02B9F1A4378F1005117EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA02B9D1A4378F1005117EA /* Main.storyboard */; };
 		CFA02BA11A4378F1005117EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA02BA01A4378F1005117EA /* Images.xcassets */; };
 		CFA02BA41A4378F1005117EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA02BA21A4378F1005117EA /* LaunchScreen.xib */; };
@@ -27,13 +31,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF79319A1A455CCB002DD617 /* UserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
+		CF79319C1A455D3D002DD617 /* UserService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
+		CF79319D1A455DE7002DD617 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		CF79319E1A455DF6002DD617 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		CF7931A21A456120002DD617 /* StringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
+		CF7931A41A45612E002DD617 /* StringUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		CF7931A51A4561FB002DD617 /* UIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtils.m; sourceTree = "<group>"; };
+		CF7931A71A456209002DD617 /* UIUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIUtils.h; sourceTree = "<group>"; };
 		CFA02B901A4378F1005117EA /* Eventz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA02B941A4378F1005117EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFA02B951A4378F1005117EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFA02B971A4378F1005117EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CFA02B981A4378F1005117EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CFA02B9A1A4378F1005117EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CFA02B9B1A4378F1005117EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CFA02B9A1A4378F1005117EA /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CFA02B9B1A4378F1005117EA /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CFA02B9E1A4378F1005117EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFA02BA01A4378F1005117EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CFA02BA31A4378F1005117EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -60,6 +72,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF7931961A455C4F002DD617 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFA02B9A1A4378F1005117EA /* LoginViewController.h */,
+				CFA02B9B1A4378F1005117EA /* LoginViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CF7931971A455C65002DD617 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFA02BA21A4378F1005117EA /* LaunchScreen.xib */,
+				CFA02B9D1A4378F1005117EA /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CF7931981A455C7C002DD617 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF79319D1A455DE7002DD617 /* User.h */,
+				CF79319E1A455DF6002DD617 /* User.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CF7931991A455C8C002DD617 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CF79319C1A455D3D002DD617 /* UserService.h */,
+				CF79319A1A455CCB002DD617 /* UserService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		CF7931A01A456076002DD617 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CF7931A41A45612E002DD617 /* StringUtils.h */,
+				CF7931A21A456120002DD617 /* StringUtils.m */,
+				CF7931A71A456209002DD617 /* UIUtils.h */,
+				CF7931A51A4561FB002DD617 /* UIUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		CFA02B871A4378F0005117EA = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +140,14 @@
 		CFA02B921A4378F1005117EA /* Eventz */ = {
 			isa = PBXGroup;
 			children = (
+				CF7931A01A456076002DD617 /* Utils */,
+				CF7931991A455C8C002DD617 /* Service */,
+				CF7931981A455C7C002DD617 /* Model */,
+				CF7931971A455C65002DD617 /* View */,
+				CF7931961A455C4F002DD617 /* Controller */,
 				CFA02B971A4378F1005117EA /* AppDelegate.h */,
 				CFA02B981A4378F1005117EA /* AppDelegate.m */,
-				CFA02B9A1A4378F1005117EA /* ViewController.h */,
-				CFA02B9B1A4378F1005117EA /* ViewController.m */,
-				CFA02B9D1A4378F1005117EA /* Main.storyboard */,
 				CFA02BA01A4378F1005117EA /* Images.xcassets */,
-				CFA02BA21A4378F1005117EA /* LaunchScreen.xib */,
 				CFA02B931A4378F1005117EA /* Supporting Files */,
 			);
 			path = Eventz;
@@ -219,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFA02B9C1A4378F1005117EA /* ViewController.m in Sources */,
+				CF79319F1A455DF6002DD617 /* User.m in Sources */,
+				CF79319B1A455CCB002DD617 /* UserService.m in Sources */,
+				CFA02B9C1A4378F1005117EA /* LoginViewController.m in Sources */,
 				CFA02B991A4378F1005117EA /* AppDelegate.m in Sources */,
+				CF7931A61A4561FB002DD617 /* UIUtils.m in Sources */,
+				CF7931A31A456120002DD617 /* StringUtils.m in Sources */,
 				CFA02B961A4378F1005117EA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +478,7 @@
 				CFA02BB51A4378F1005117EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFA02BB61A4378F1005117EA /* Build configuration list for PBXNativeTarget "EventzTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +487,7 @@
 				CFA02BB81A4378F1005117EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

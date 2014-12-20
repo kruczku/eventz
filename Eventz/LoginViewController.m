@@ -6,13 +6,15 @@
 //  Copyright (c) 2014 Rafał Mańka. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LoginViewController.h"
+#import "UserService.h"
+#import "UIUtils.h"
 
-@interface ViewController ()
+@interface LoginViewController ()
 
 @end
 
-@implementation ViewController
+@implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,6 +28,36 @@
     [self setupTextField:passwordTF];
 }
 
+/*
+ Checks if login and password are in correct format
+ */
+- (IBAction)clickLoginButton:(id)sender {
+    
+    NSString *login = [self.tfLogin text];
+    BOOL isCorrectLogin = [UserService isValidLogin:login];
+    if(!isCorrectLogin){
+        [UIUtils showAlert:@"Niepoprawny login. Musisz podać cały adres email." forTitle:@"Błędny login" andCancelButton:@"OK"];
+        return;
+    }
+    
+    NSString *password = [self.tfPassword text];
+    BOOL isCorrectPassword = [UserService isValidPassword:password];
+    if(!isCorrectPassword){
+        [UIUtils showAlert:@"hasło musi składać się z przynajmniej 5 znaków." forTitle:@"Niepoprawne hasło" andCancelButton:@"OK"];
+        return;
+    }
+    
+    [self startRequestLogin];
+    
+}
+
+/*
+ Sends login request to API
+ */
+- (void) startRequestLogin{
+    //TODO: implement this method. send request to api
+    [UIUtils showAlert:@"ok, teraz request do api." forTitle:@"super" andCancelButton:@"OK"];
+}
 
 /*
  Styles login button to have round edges and dark green border
