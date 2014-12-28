@@ -8,13 +8,20 @@
 
 #ifndef Eventz_UserService_h
 #define Eventz_UserService_h
-
-
 #endif
+
+#import <UIKit/UIKit.h>
+#import "User.h"
+
 
 @interface UserService : NSObject
 
-+ (BOOL) isValidLogin:(NSString *)checkString;
-+ (BOOL) isValidPassword:(NSString *)checkString;
+- (id) init:(id) delegate;
+- (BOOL) isValidLogin:(NSString *)checkString;
+- (BOOL) isValidPassword:(NSString *)checkString;
+- (void) startRequestLogin:(NSString*)login
+              withPassword:(NSString*)password;
+
+@property (nonatomic, assign) id delegate;
 
 @end

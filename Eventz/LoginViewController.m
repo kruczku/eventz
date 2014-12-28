@@ -16,6 +16,15 @@
 
 @implementation LoginViewController
 
+UserService *userService;
+
+- (UserService *) getUserService{
+    if(!userService){
+        userService = [[UserService alloc] init:self];
+    }
+    return userService;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // setup login button
@@ -34,29 +43,28 @@
 - (IBAction)clickLoginButton:(id)sender {
     
     NSString *login = [self.tfLogin text];
-    BOOL isCorrectLogin = [UserService isValidLogin:login];
+    UserService *service = [self getUserService];
+    BOOL isCorrectLogin = [service isValidLogin:login];
     if(!isCorrectLogin){
         [UIUtils showAlert:@"Niepoprawny login. Musisz podać cały adres email." forTitle:@"Błędny login" andCancelButton:@"OK"];
         return;
     }
     
     NSString *password = [self.tfPassword text];
-    BOOL isCorrectPassword = [UserService isValidPassword:password];
+    BOOL isCorrectPassword = [service isValidPassword:password];
     if(!isCorrectPassword){
         [UIUtils showAlert:@"hasło musi składać się z przynajmniej 5 znaków." forTitle:@"Niepoprawne hasło" andCancelButton:@"OK"];
         return;
     }
     
-    [self startRequestLogin];
+    [service startRequestLogin:login withPassword:password];
     
 }
 
-/*
- Sends login request to API
- */
-- (void) startRequestLogin{
-    //TODO: implement this method. send request to api
-    [UIUtils showAlert:@"ok, teraz request do api." forTitle:@"super" andCancelButton:@"OK"];
+- (void)didLoginUser:(User*)user{
+    NSLog(@"name=%@",user.name);
+    [UIUtils showAlert:@"Now I have to segue to next view" forTitle:@"Great!" andCancelButton:@"move on"];
+    
 }
 
 /*

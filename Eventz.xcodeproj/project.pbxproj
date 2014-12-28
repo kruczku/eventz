@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B6C1DBA4C74729B8C642CA7 /* libPods-Eventz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9764103D9F425B4E2F46842E /* libPods-Eventz.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		CF79319B1A455CCB002DD617 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = CF79319A1A455CCB002DD617 /* UserService.m */; };
 		CF79319F1A455DF6002DD617 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CF79319E1A455DF6002DD617 /* User.m */; };
 		CF7931A31A456120002DD617 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7931A21A456120002DD617 /* StringUtils.m */; };
 		CF7931A61A4561FB002DD617 /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7931A51A4561FB002DD617 /* UIUtils.m */; };
+		CF9995EA1A4F70D5005C863D /* ResponseLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9995E91A4F70D5005C863D /* ResponseLogin.m */; };
+		CF9995EC1A4F70E7005C863D /* ResponseBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9995EB1A4F70E7005C863D /* ResponseBase.m */; };
 		CFA02B961A4378F1005117EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA02B951A4378F1005117EA /* main.m */; };
 		CFA02B991A4378F1005117EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA02B981A4378F1005117EA /* AppDelegate.m */; };
 		CFA02B9C1A4378F1005117EA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA02B9B1A4378F1005117EA /* LoginViewController.m */; };
@@ -31,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B5F9E9ED28579F9E90A3507 /* Pods-Eventz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eventz/Pods-Eventz.debug.xcconfig"; sourceTree = "<group>"; };
+		5AC9B90136E848486D5014C0 /* Pods-Eventz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eventz/Pods-Eventz.release.xcconfig"; sourceTree = "<group>"; };
+		9764103D9F425B4E2F46842E /* libPods-Eventz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Eventz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF79319A1A455CCB002DD617 /* UserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
 		CF79319C1A455D3D002DD617 /* UserService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
 		CF79319D1A455DE7002DD617 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -39,6 +45,11 @@
 		CF7931A41A45612E002DD617 /* StringUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
 		CF7931A51A4561FB002DD617 /* UIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtils.m; sourceTree = "<group>"; };
 		CF7931A71A456209002DD617 /* UIUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIUtils.h; sourceTree = "<group>"; };
+		CF9995E41A4F5F96005C863D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CF9995E71A4F6F08005C863D /* ResponseLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponseLogin.h; sourceTree = "<group>"; };
+		CF9995E81A4F6F19005C863D /* ResponseBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponseBase.h; sourceTree = "<group>"; };
+		CF9995E91A4F70D5005C863D /* ResponseLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseLogin.m; sourceTree = "<group>"; };
+		CF9995EB1A4F70E7005C863D /* ResponseBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseBase.m; sourceTree = "<group>"; };
 		CFA02B901A4378F1005117EA /* Eventz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA02B941A4378F1005117EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFA02B951A4378F1005117EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6C1DBA4C74729B8C642CA7 /* libPods-Eventz.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A78024FFEF3B45BF24084942 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9764103D9F425B4E2F46842E /* libPods-Eventz.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF7931961A455C4F002DD617 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +113,7 @@
 		CF7931981A455C7C002DD617 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CF9995E61A4F6EEC005C863D /* Response */,
 				CF79319D1A455DE7002DD617 /* User.h */,
 				CF79319E1A455DF6002DD617 /* User.m */,
 			);
@@ -119,12 +140,34 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		CF9994861A4F5F0B005C863D /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				CF9995E41A4F5F96005C863D /* SystemConfiguration.framework */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		CF9995E61A4F6EEC005C863D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				CF9995E71A4F6F08005C863D /* ResponseLogin.h */,
+				CF9995E91A4F70D5005C863D /* ResponseLogin.m */,
+				CF9995E81A4F6F19005C863D /* ResponseBase.h */,
+				CF9995EB1A4F70E7005C863D /* ResponseBase.m */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
 		CFA02B871A4378F0005117EA = {
 			isa = PBXGroup;
 			children = (
+				CF9994861A4F5F0B005C863D /* Libs */,
 				CFA02B921A4378F1005117EA /* Eventz */,
 				CFA02BAC1A4378F1005117EA /* EventzTests */,
 				CFA02B911A4378F1005117EA /* Products */,
+				F9454E771E0D57604F0C514D /* Pods */,
+				A78024FFEF3B45BF24084942 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,10 +188,10 @@
 				CF7931981A455C7C002DD617 /* Model */,
 				CF7931971A455C65002DD617 /* View */,
 				CF7931961A455C4F002DD617 /* Controller */,
+				CFA02B931A4378F1005117EA /* Supporting Files */,
 				CFA02B971A4378F1005117EA /* AppDelegate.h */,
 				CFA02B981A4378F1005117EA /* AppDelegate.m */,
 				CFA02BA01A4378F1005117EA /* Images.xcassets */,
-				CFA02B931A4378F1005117EA /* Supporting Files */,
 			);
 			path = Eventz;
 			sourceTree = "<group>";
@@ -179,6 +222,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F9454E771E0D57604F0C514D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B5F9E9ED28579F9E90A3507 /* Pods-Eventz.debug.xcconfig */,
+				5AC9B90136E848486D5014C0 /* Pods-Eventz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFA02BB31A4378F1005117EA /* Build configuration list for PBXNativeTarget "Eventz" */;
 			buildPhases = (
+				85E66C63E67F6C6A533E0529 /* Check Pods Manifest.lock */,
 				CFA02B8C1A4378F0005117EA /* Sources */,
 				CFA02B8D1A4378F0005117EA /* Frameworks */,
 				CFA02B8E1A4378F0005117EA /* Resources */,
+				4B28DB580C1A8D2E24EFDB3F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,6 +328,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B28DB580C1A8D2E24EFDB3F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eventz/Pods-Eventz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85E66C63E67F6C6A533E0529 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CFA02B8C1A4378F0005117EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -281,11 +368,13 @@
 			files = (
 				CF79319F1A455DF6002DD617 /* User.m in Sources */,
 				CF79319B1A455CCB002DD617 /* UserService.m in Sources */,
+				CF9995EA1A4F70D5005C863D /* ResponseLogin.m in Sources */,
 				CFA02B9C1A4378F1005117EA /* LoginViewController.m in Sources */,
 				CFA02B991A4378F1005117EA /* AppDelegate.m in Sources */,
 				CF7931A61A4561FB002DD617 /* UIUtils.m in Sources */,
 				CF7931A31A456120002DD617 /* StringUtils.m in Sources */,
 				CFA02B961A4378F1005117EA /* main.m in Sources */,
+				CF9995EC1A4F70E7005C863D /* ResponseBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,9 +496,12 @@
 		};
 		CFA02BB41A4378F1005117EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B5F9E9ED28579F9E90A3507 /* Pods-Eventz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Eventz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -417,9 +509,12 @@
 		};
 		CFA02BB51A4378F1005117EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC9B90136E848486D5014C0 /* Pods-Eventz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Eventz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

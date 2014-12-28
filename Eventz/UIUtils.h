@@ -6,11 +6,7 @@
 //  Copyright (c) 2014 Rafał Mańka. All rights reserved.
 //
 
-#ifndef Eventz_UIUtils_h
-#define Eventz_UIUtils_h
-
-
-#endif
+#import <UIKit/UIKit.h>
 
 @interface UIUtils : NSObject
 

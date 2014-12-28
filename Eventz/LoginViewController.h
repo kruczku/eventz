@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController <UserDelegate>
 
 @property (strong, nonatomic) IBOutlet UIButton *btnLogin;
 @property (strong, nonatomic) IBOutlet UITextField *tfLogin;
