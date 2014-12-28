@@ -4,6 +4,7 @@
 target 'Eventz' do
 
 pod 'JSONModel'
+pod 'MBProgressHUD', '~> 0.8'
 
 end
 

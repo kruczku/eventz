@@ -11,6 +11,7 @@
 #import "StringUtils.h"
 #import "UIUtils.h"
 #import "ResponseLogin.h"
+#import "User.h"
 
 @implementation UserService
 
@@ -38,6 +39,8 @@ NSString *endpoint = @"http://eventz-rafalmanka.rhcloud.com/rest/login/auth";
 
 - (void) startRequestLogin:(NSString*)login
               withPassword:(NSString*)password {
+   
+    
     
     mutableData = [[NSMutableData alloc] init];
     
@@ -53,18 +56,13 @@ NSString *endpoint = @"http://eventz-rafalmanka.rhcloud.com/rest/login/auth";
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody:postData];
     
-    NSURLConnection *conn = [[NSURLConnection alloc]initWithRequest:request delegate:self];
+    NSURLConnection *conn = [[NSURLConnection alloc]initWithRequest:request delegate:self];    
+    
 }
 
 
 
 -(void) connection:(NSURLConnection *) connection didReceiveResponse:(NSHTTPURLResponse *)resp{
-    
-    if([resp statusCode] == 200){
-        NSLog(@"success=%@",resp);
-    }else{
-        NSLog(@"failure=%@",resp);
-    }
     [mutableData setLength:0];
 }
 
@@ -88,17 +86,20 @@ NSString *endpoint = @"http://eventz-rafalmanka.rhcloud.com/rest/login/auth";
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    
+    NSLog(@"connectionDidFinishLoading" );
     NSString *responseJSON = [[NSString alloc] initWithData: mutableData encoding:NSUTF8StringEncoding];
 //    NSLog(@"Response Json : %@", responseJSON);
-    NSError *err;
+    NSError *err = nil;
     ResponseLogin *resp = [[ResponseLogin alloc] initWithString:responseJSON error:&err];
     
-    if (!err && resp) {
-       
-        [[self delegate]  didLoginUser:resp.user];
+    
+    if (err == nil) {
+//        User *user = resp.user;
+        NSLog(@"response code=%d",resp.code);
+//        [[self delegate]  didLoginUser:user];
     }else{
         [UIUtils showAlert:@"Login attempt failed" forTitle:@"Nope!" andCancelButton:@"move on"];
+        [[self delegate]  didLoginRefused];
     }
     
     

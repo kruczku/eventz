@@ -22,6 +22,6 @@
 - (void) startRequestLogin:(NSString*)login
               withPassword:(NSString*)password;
 
-@property (nonatomic, assign) id delegate;
+@property (nonatomic, retain) id delegate;
 
 @end

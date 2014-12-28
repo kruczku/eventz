@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Eventz-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Eventz.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D830A4B4F91E76CEA5662A22</key>
+		<key>46E9783FB57A83070A3283E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4A929F4C13F69F5C2BF0B97</key>
+		<key>479911EB2F87FD7C28BF66DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A962CF943CC523AEEE7CAA62</key>
 		<dict>
 			<key>primary</key>
 			<true/>
