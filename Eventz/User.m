@@ -12,6 +12,8 @@
 
 - (id)initWithResponseData:(NSDictionary*) userDictionary
 {
+    
+    // to jest test
     self.name = [userDictionary valueForKey:@"name"];
     self.surname = [userDictionary valueForKey:@"surname"];
     self.id = (int)[userDictionary valueForKey:@"id"];
