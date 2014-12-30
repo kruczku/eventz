@@ -15,6 +15,8 @@
 
 @interface ResponseLogin : ResponseBase
 
-@property (nonatomic, assign) User* user;
+@property (assign, nonatomic) int code;
+@property (nonatomic, assign) NSDictionary<UserDelegate> *user;
+@property (assign, nonatomic) NSString* message;
 
 @end

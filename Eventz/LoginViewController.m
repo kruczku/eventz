@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "UserService.h"
 #import "UIUtils.h"
+#import "User.h"
 
 @interface LoginViewController ()
 
@@ -62,7 +63,7 @@ UserService *userService;
 }
 
 - (void)didLoginUser:(User*)user{
-    NSLog(@"name=%@",user.name);
+    NSLog(@"%@", user);
     [UIUtils showAlert:@"Now I have to segue to next view" forTitle:@"Great!" andCancelButton:@"move on"];
     
 }

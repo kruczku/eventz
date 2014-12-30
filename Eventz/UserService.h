@@ -11,6 +11,7 @@
 #endif
 
 #import <UIKit/UIKit.h>
+#import "ResponseLogin.h"
 #import "User.h"
 
 
@@ -21,6 +22,7 @@
 - (BOOL) isValidPassword:(NSString *)checkString;
 - (void) startRequestLogin:(NSString*)login
               withPassword:(NSString*)password;
++ (NSDictionary*) getUserDataDictionary:(ResponseLogin *) responseData;
 
 @property (nonatomic, retain) id delegate;
 

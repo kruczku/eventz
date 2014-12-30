@@ -88,15 +88,15 @@ NSString *endpoint = @"http://eventz-rafalmanka.rhcloud.com/rest/login/auth";
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection {
     NSLog(@"connectionDidFinishLoading" );
     NSString *responseJSON = [[NSString alloc] initWithData: mutableData encoding:NSUTF8StringEncoding];
-//    NSLog(@"Response Json : %@", responseJSON);
+    NSLog(@"Response Json : %@", responseJSON);
     NSError *err = nil;
     ResponseLogin *resp = [[ResponseLogin alloc] initWithString:responseJSON error:&err];
+    NSDictionary *userDictionary = [UserService getUserDataDictionary:resp];
     
     
     if (err == nil) {
-//        User *user = resp.user;
-        NSLog(@"response code=%d",resp.code);
-//        [[self delegate]  didLoginUser:user];
+        User *user = [[User alloc] initWithResponseData:userDictionary];
+        [[self delegate]  didLoginUser:user];
     }else{
         [UIUtils showAlert:@"Login attempt failed" forTitle:@"Nope!" andCancelButton:@"move on"];
         [[self delegate]  didLoginRefused];
@@ -105,6 +105,12 @@ NSString *endpoint = @"http://eventz-rafalmanka.rhcloud.com/rest/login/auth";
     
     
     // You can do your functions here. If your repines is in XML you have to parse the response using NSXMLParser. If your response in JSON you have use SBJSON.
+}
+
++ (NSDictionary*) getUserDataDictionary:(ResponseLogin *) responseData
+{
+    NSDictionary *respDict = [responseData toDictionary];
+    return [respDict objectForKey:@"user"];
 }
 
 @end

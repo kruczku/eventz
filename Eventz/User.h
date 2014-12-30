@@ -14,6 +14,8 @@
     @property (nonatomic, assign) NSString* name;
     @property (nonatomic, assign) NSString* surname; 
 
+- (id)initWithResponseData:(NSDictionary*) userData;
+
 @end
 
 @protocol UserDelegate
