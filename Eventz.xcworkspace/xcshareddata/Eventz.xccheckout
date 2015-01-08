@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1146F203-3A9D-4976-8238-5FBB21F6ADF8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Eventz</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F5F41BF71E9C8971C2351AD60458AF0785D53074</key>
+		<string>https://bitbucket.org/kdebowski/eventz.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Eventz.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F5F41BF71E9C8971C2351AD60458AF0785D53074</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/kdebowski/eventz.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F5F41BF71E9C8971C2351AD60458AF0785D53074</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F5F41BF71E9C8971C2351AD60458AF0785D53074</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Eventz</string>
+		</dict>
+	</array>
+</dict>
+</plist>

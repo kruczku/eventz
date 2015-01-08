@@ -21,6 +21,8 @@
 		CFA02BA11A4378F1005117EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA02BA01A4378F1005117EA /* Images.xcassets */; };
 		CFA02BA41A4378F1005117EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA02BA21A4378F1005117EA /* LaunchScreen.xib */; };
 		CFA02BB01A4378F1005117EA /* EventzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA02BAF1A4378F1005117EA /* EventzTests.m */; };
+		EA2F866D1A5F170A00CE83D0 /* EventsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2F866C1A5F170900CE83D0 /* EventsListViewController.m */; };
+		EA2F866E1A5F170A00CE83D0 /* EventsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2F866C1A5F170900CE83D0 /* EventsListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		CFA02BA91A4378F1005117EA /* EventzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA02BAE1A4378F1005117EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFA02BAF1A4378F1005117EA /* EventzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventzTests.m; sourceTree = "<group>"; };
+		EA2F866B1A5F170900CE83D0 /* EventsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsListViewController.h; sourceTree = "<group>"; };
+		EA2F866C1A5F170900CE83D0 /* EventsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		CF7931961A455C4F002DD617 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EA2F866B1A5F170900CE83D0 /* EventsListViewController.h */,
+				EA2F866C1A5F170900CE83D0 /* EventsListViewController.m */,
 				CFA02B9A1A4378F1005117EA /* LoginViewController.h */,
 				CFA02B9B1A4378F1005117EA /* LoginViewController.m */,
 			);
@@ -373,6 +379,7 @@
 				CFA02B991A4378F1005117EA /* AppDelegate.m in Sources */,
 				CF7931A61A4561FB002DD617 /* UIUtils.m in Sources */,
 				CF7931A31A456120002DD617 /* StringUtils.m in Sources */,
+				EA2F866D1A5F170A00CE83D0 /* EventsListViewController.m in Sources */,
 				CFA02B961A4378F1005117EA /* main.m in Sources */,
 				CF9995EC1A4F70E7005C863D /* ResponseBase.m in Sources */,
 			);
@@ -383,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFA02BB01A4378F1005117EA /* EventzTests.m in Sources */,
+				EA2F866E1A5F170A00CE83D0 /* EventsListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

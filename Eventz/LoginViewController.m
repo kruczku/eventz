@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "EventsListViewController.h"
 #import "UserService.h"
 #import "UIUtils.h"
 #import "User.h"
@@ -42,7 +43,7 @@ UserService *userService;
  Checks if login and password are in correct format
  */
 - (IBAction)clickLoginButton:(id)sender {
-    
+
     NSString *login = [self.tfLogin text];
     UserService *service = [self getUserService];
     BOOL isCorrectLogin = [service isValidLogin:login];
@@ -63,8 +64,8 @@ UserService *userService;
 }
 
 - (void)didLoginUser:(User*)user{
-    NSLog(@"%@", user);
-    [UIUtils showAlert:@"Now I have to segue to next view" forTitle:@"Great!" andCancelButton:@"move on"];
+    EventsListViewController *eventsListConstroller = [[EventsListViewController alloc] initWithNibName:nil bundle:nil];
+    [self performSegueWithIdentifier:@"eventsListView" sender:nil];
     
 }
 

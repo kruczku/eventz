@@ -67,11 +67,47 @@
                         <outlet property="btnLogin" destination="I70-qb-bCk" id="mFd-6L-M09"/>
                         <outlet property="tfLogin" destination="8cA-cJ-HZo" id="6Cd-Rg-HOs"/>
                         <outlet property="tfPassword" destination="ZQV-nT-ITa" id="NmN-EG-0he"/>
+                        <segue destination="y0R-6w-6cu" kind="presentation" identifier="eventsListView" id="gLg-2N-NPo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1434" y="1140"/>
+        </scene>
+        <!--Events List View Controller-->
+        <scene sceneID="39z-zA-6iG">
+            <objects>
+                <viewController id="y0R-6w-6cu" customClass="EventsListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mer-bn-QJL"/>
+                        <viewControllerLayoutGuide type="bottom" id="sQX-d2-h6g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p9i-6c-tZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="y1S-YW-xZO">
+                                <rect key="frame" x="52" y="83" width="496" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TitleLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdY-vl-IhK">
+                                <rect key="frame" x="54" y="186" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DescriptionLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ag-n8-Ow8">
+                                <rect key="frame" x="54" y="222" width="403" height="348"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNC-xf-VEB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2172" y="1140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yMY-sh-Pr1">
