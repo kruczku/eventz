@@ -16,22 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    NSString *jsonAddress = @"http://json.rafalmanka.pl/proh/conferences";
+    NSURL *jsonURL = [NSURL URLWithString:jsonAddress];
+    NSDictionary *json = [EventsListViewController getJSONData:jsonURL];
+    
+    //USE THIS JSON FILE TO CREATE EVENTS LIST
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
++(NSDictionary*) getJSONData:(NSURL*)jsonURL {
+    NSData *jsonFile = [[NSData alloc] initWithContentsOfURL:jsonURL];
+    return [NSJSONSerialization JSONObjectWithData:jsonFile options:NSJSONReadingMutableContainers error:nil];
 }
-*/
+
 
 @end

@@ -10,4 +10,6 @@
 
 @interface EventsListViewController : UIViewController
 
++(NSDictionary*) getJSONData:(NSURL*)jsonURL;
+
 @end
