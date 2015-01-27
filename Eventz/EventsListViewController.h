@@ -10,6 +10,10 @@
 
 @interface EventsListViewController : UIViewController
 
-+(NSDictionary*) getJSONData:(NSURL*)jsonURL;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, assign) NSDictionary* events;
+
+- (void) getJSONData:(NSURL*)jsonURL;
+- (void) setupScrollView:(UIScrollView*)scrollView withConferences:(NSDictionary*)conferences;
 
 @end
