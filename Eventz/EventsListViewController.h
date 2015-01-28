@@ -11,9 +11,13 @@
 @interface EventsListViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (nonatomic, assign) NSDictionary* events;
 
 - (void) getJSONData:(NSURL*)jsonURL;
 - (void) setupScrollView:(UIScrollView*)scrollView withConferences:(NSDictionary*)conferences;
+- (void) initFirstEvent:(UILabel*)titleLabel andDescription:(UILabel*)descriptionLabel withConferences:(NSDictionary*)conferences;
++ (NSString*) getFirstEventTitle:(NSDictionary*)conferences;
 
 @end

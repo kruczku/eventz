@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D709125E5F3716861F09DAB"
+               BlueprintIdentifier = "0C02FB8C8E5B6D38209DAB49"
                BuildableName = "libPods-Eventz-JSONModel.a"
                BlueprintName = "Pods-Eventz-JSONModel"
                ReferencedContainer = "container:Pods.xcodeproj">
