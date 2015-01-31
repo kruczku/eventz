@@ -13,7 +13,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *Subject;
 @property (weak, nonatomic) IBOutlet UILabel *DateStart;
 @property (weak, nonatomic) IBOutlet UILabel *Location;
-@property (weak, nonatomic) IBOutlet UILabel *Description;
+@property (strong, nonatomic) IBOutlet UITextView *tvDescription;
+
 @property (weak, nonatomic) IBOutlet UILabel *Partners;
 @property NSUInteger pageIndex;
 @property Conference *DataContext;

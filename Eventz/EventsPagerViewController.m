@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Konferencje PJWSTK";
+    
     EventsPagerViewController *eventsList = [[EventsPagerViewController alloc] init];
     
     NSURL *jsonURL = [NSURL URLWithString:@"http://json.rafalmanka.pl/proh/conferences"];
