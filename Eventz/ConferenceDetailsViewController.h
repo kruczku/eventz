@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Conference.h"
+
 
 @interface ConferenceDetailsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *lbConferenceTitle;
+@property (nonatomic, retain)Conference *DataContext;
 
 @end

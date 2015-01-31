@@ -7,6 +7,7 @@
 //
 
 #import "ConferenceContentViewController.h"
+#import "ConferenceDetailsViewController.h"
 
 @interface ConferenceContentViewController ()
 
@@ -36,14 +37,23 @@
     self.tvDescription.text = self.DataContext.Description;
     [self.tvDescription setFont:[UIFont boldSystemFontOfSize:18]];
     self.Location.text = self.DataContext.Location;
-    
     self.Partners.text = self.DataContext.Partners;
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"show-conf-details"]) {
+        ConferenceDetailsViewController *senderEntry = (ConferenceDetailsViewController*)sender;
+        senderEntry.DataContext = self.DataContext;
+        
+//        [segue destinationViewController].delegate = self;
+//        [segue destinationViewController].entry = entry;
+        return;
+
+    }
 }
 
 @end

@@ -17,7 +17,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *Partners;
 @property NSUInteger pageIndex;
-@property Conference *DataContext;
+@property (nonatomic, retain)Conference *DataContext;
 
 
 -(id) initWithConference:(Conference*) conf;
