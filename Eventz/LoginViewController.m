@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-#import "EventsListViewController.h"
+#import "EventsPagerViewController.h"
 #import "UserService.h"
 #import "UIUtils.h"
 #import "User.h"
@@ -64,7 +64,7 @@ UserService *userService;
 }
 
 - (void)didLoginUser:(User*)user{
-    EventsListViewController *eventsListConstroller = [[EventsListViewController alloc] initWithNibName:nil bundle:nil];
+    EventsPagerViewController *eventsListConstroller = [[EventsPagerViewController alloc] initWithNibName:nil bundle:nil];
     [self performSegueWithIdentifier:@"eventsListView" sender:nil];
     
 }

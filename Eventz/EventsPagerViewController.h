@@ -10,7 +10,7 @@
 #import "Conference.h"
 #import "ConferenceContentViewController.h"
 
-@interface EventsListViewController : UIViewController <UIPageViewControllerDataSource>
+@interface EventsPagerViewController : UIViewController <UIPageViewControllerDataSource>
 
 @property (nonatomic, assign) NSDictionary* events;
 @property (strong, nonatomic) UIPageViewController *pageViewController;

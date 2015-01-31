@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B6C1DBA4C74729B8C642CA7 /* libPods-Eventz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9764103D9F425B4E2F46842E /* libPods-Eventz.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		CF302A501A7D355E00B0AB45 /* ConferenceDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF302A4F1A7D355E00B0AB45 /* ConferenceDetailsViewController.m */; };
 		CF79319B1A455CCB002DD617 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = CF79319A1A455CCB002DD617 /* UserService.m */; };
 		CF79319F1A455DF6002DD617 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CF79319E1A455DF6002DD617 /* User.m */; };
 		CF7931A31A456120002DD617 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7931A21A456120002DD617 /* StringUtils.m */; };
@@ -23,8 +24,8 @@
 		CFA02BB01A4378F1005117EA /* EventzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA02BAF1A4378F1005117EA /* EventzTests.m */; };
 		DB9A612A1A7C323300613D25 /* ConferenceContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9A61291A7C323300613D25 /* ConferenceContentViewController.m */; };
 		DBFBE82A1A7BB5CC00FF2E46 /* Conference.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFBE8291A7BB5CC00FF2E46 /* Conference.m */; };
-		EA2F866D1A5F170A00CE83D0 /* EventsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2F866C1A5F170900CE83D0 /* EventsListViewController.m */; };
-		EA2F866E1A5F170A00CE83D0 /* EventsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2F866C1A5F170900CE83D0 /* EventsListViewController.m */; };
+		EA2F866D1A5F170A00CE83D0 /* EventsPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2F866C1A5F170900CE83D0 /* EventsPagerViewController.m */; };
+		EA2F866E1A5F170A00CE83D0 /* EventsPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2F866C1A5F170900CE83D0 /* EventsPagerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 		1B5F9E9ED28579F9E90A3507 /* Pods-Eventz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eventz/Pods-Eventz.debug.xcconfig"; sourceTree = "<group>"; };
 		5AC9B90136E848486D5014C0 /* Pods-Eventz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eventz/Pods-Eventz.release.xcconfig"; sourceTree = "<group>"; };
 		9764103D9F425B4E2F46842E /* libPods-Eventz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Eventz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF302A4E1A7D355E00B0AB45 /* ConferenceDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConferenceDetailsViewController.h; sourceTree = "<group>"; };
+		CF302A4F1A7D355E00B0AB45 /* ConferenceDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConferenceDetailsViewController.m; sourceTree = "<group>"; };
 		CF79319A1A455CCB002DD617 /* UserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
 		CF79319C1A455D3D002DD617 /* UserService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
 		CF79319D1A455DE7002DD617 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -71,8 +74,8 @@
 		DB9A61291A7C323300613D25 /* ConferenceContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConferenceContentViewController.m; sourceTree = "<group>"; };
 		DBFBE8281A7BB5CC00FF2E46 /* Conference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conference.h; sourceTree = "<group>"; };
 		DBFBE8291A7BB5CC00FF2E46 /* Conference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conference.m; sourceTree = "<group>"; };
-		EA2F866B1A5F170900CE83D0 /* EventsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsListViewController.h; sourceTree = "<group>"; };
-		EA2F866C1A5F170900CE83D0 /* EventsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsListViewController.m; sourceTree = "<group>"; };
+		EA2F866B1A5F170900CE83D0 /* EventsPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsPagerViewController.h; sourceTree = "<group>"; };
+		EA2F866C1A5F170900CE83D0 /* EventsPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsPagerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +108,14 @@
 		CF7931961A455C4F002DD617 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EA2F866B1A5F170900CE83D0 /* EventsListViewController.h */,
-				EA2F866C1A5F170900CE83D0 /* EventsListViewController.m */,
+				EA2F866B1A5F170900CE83D0 /* EventsPagerViewController.h */,
+				EA2F866C1A5F170900CE83D0 /* EventsPagerViewController.m */,
 				CFA02B9A1A4378F1005117EA /* LoginViewController.h */,
 				CFA02B9B1A4378F1005117EA /* LoginViewController.m */,
 				DB9A61281A7C323300613D25 /* ConferenceContentViewController.h */,
 				DB9A61291A7C323300613D25 /* ConferenceContentViewController.m */,
+				CF302A4E1A7D355E00B0AB45 /* ConferenceDetailsViewController.h */,
+				CF302A4F1A7D355E00B0AB45 /* ConferenceDetailsViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -390,8 +395,9 @@
 				CF7931A61A4561FB002DD617 /* UIUtils.m in Sources */,
 				DBFBE82A1A7BB5CC00FF2E46 /* Conference.m in Sources */,
 				CF7931A31A456120002DD617 /* StringUtils.m in Sources */,
-				EA2F866D1A5F170A00CE83D0 /* EventsListViewController.m in Sources */,
+				EA2F866D1A5F170A00CE83D0 /* EventsPagerViewController.m in Sources */,
 				CFA02B961A4378F1005117EA /* main.m in Sources */,
+				CF302A501A7D355E00B0AB45 /* ConferenceDetailsViewController.m in Sources */,
 				DB9A612A1A7C323300613D25 /* ConferenceContentViewController.m in Sources */,
 				CF9995EC1A4F70E7005C863D /* ResponseBase.m in Sources */,
 			);
@@ -402,7 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFA02BB01A4378F1005117EA /* EventzTests.m in Sources */,
-				EA2F866E1A5F170A00CE83D0 /* EventsListViewController.m in Sources */,
+				EA2F866E1A5F170A00CE83D0 /* EventsPagerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,18 +6,18 @@
 //  Copyright (c) 2015 Rafał Mańka. All rights reserved.
 //
 
-#import "EventsListViewController.h"
+#import "EventsPagerViewController.h"
 
-@interface EventsListViewController ()
+@interface EventsPagerViewController ()
 
 @end
 
-@implementation EventsListViewController
+@implementation EventsPagerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    EventsListViewController *eventsList = [[EventsListViewController alloc] init];
+    EventsPagerViewController *eventsList = [[EventsPagerViewController alloc] init];
     
     NSURL *jsonURL = [NSURL URLWithString:@"http://json.rafalmanka.pl/proh/conferences"];
     [eventsList getJSONData:jsonURL];

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cTp-r1-R5n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cTp-r1-R5n">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -67,17 +67,17 @@
                         <outlet property="btnLogin" destination="I70-qb-bCk" id="mFd-6L-M09"/>
                         <outlet property="tfLogin" destination="8cA-cJ-HZo" id="6Cd-Rg-HOs"/>
                         <outlet property="tfPassword" destination="ZQV-nT-ITa" id="NmN-EG-0he"/>
-                        <segue destination="y0R-6w-6cu" kind="presentation" identifier="eventsListView" id="gLg-2N-NPo"/>
+                        <segue destination="56O-M5-VkR" kind="presentation" identifier="eventsListView" id="gLg-2N-NPo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1468" y="1287"/>
+            <point key="canvasLocation" x="1538" y="1140"/>
         </scene>
-        <!--Conference Content View Controller-->
+        <!--Konferencje PJWSTK-->
         <scene sceneID="oTh-Tz-iqm">
             <objects>
-                <viewController storyboardIdentifier="ConferenceContentViewController" id="Yu4-ia-Php" customClass="ConferenceContentViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConferenceContentViewController" title="Konferencje PJWSTK" id="Yu4-ia-Php" customClass="ConferenceContentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w6y-gN-JEl"/>
                         <viewControllerLayoutGuide type="bottom" id="xKT-tN-BxK"/>
@@ -86,38 +86,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0H-Jk-ql9" colorLabel="IBBuiltInLabel-Red">
-                                <rect key="frame" x="16" y="28" width="568" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subject" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0H-Jk-ql9" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="16" y="76" width="568" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Yqu-pq-ARd" appends="YES" id="jTv-Ig-x4u"/>
+                                </connections>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kiedy:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IU4-pT-Ko9">
-                                <rect key="frame" x="16" y="80" width="48" height="21"/>
+                                <rect key="frame" x="18" y="133" width="48" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3H-Vj-bBa">
-                                <rect key="frame" x="82" y="80" width="502" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="21.09.1986" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3H-Vj-bBa">
+                                <rect key="frame" x="82" y="133" width="502" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gdzie:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiK-O4-4Te">
-                                <rect key="frame" x="16" y="128" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Opis" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbM-UI-N0M">
-                                <rect key="frame" x="16" y="191" width="36" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8N-qL-Del">
-                                <rect key="frame" x="16" y="226" width="532" height="288"/>
+                                <rect key="frame" x="18" y="162" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -134,15 +125,27 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPD-Sv-KUx">
-                                <rect key="frame" x="82" y="128" width="502" height="21"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8N-qL-Del">
+                                <rect key="frame" x="16" y="431" width="426" height="94"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Yqu-pq-ARd" appends="YES" id="eJO-St-81c"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Warszawa, " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPD-Sv-KUx">
+                                <rect key="frame" x="82" y="162" width="502" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
+                    <navigationItem key="navigationItem" id="T2O-1R-tra"/>
                     <connections>
                         <outlet property="DateStart" destination="p3H-Vj-bBa" id="MYW-a4-TN7"/>
                         <outlet property="Description" destination="a8N-qL-Del" id="uPZ-Tu-q6x"/>
@@ -152,23 +155,55 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XeB-bk-f8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Yqu-pq-ARd">
+                    <connections>
+                        <segue destination="3Mo-Nj-ouL" kind="show" identifier="show-conf-details" id="ZpM-OM-U87"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2225" y="260"/>
+            <point key="canvasLocation" x="2724" y="260"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Konferencje PJWSTK-->
+        <scene sceneID="9Re-kc-YII">
+            <objects>
+                <viewController title="Konferencje PJWSTK" id="3Mo-Nj-ouL" customClass="ConferenceDetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gVn-Ms-G1Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="UxL-ia-Kxp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pgg-UB-eOt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3a0-YW-ogw">
+                                <rect key="frame" x="35" y="122" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VNb-k9-2rH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wa0-7u-Vyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3503" y="260"/>
+        </scene>
+        <!--Konferencje PJWSTK 1-->
         <scene sceneID="v2L-A4-JP8">
             <objects>
-                <pageViewController storyboardIdentifier="ConferenceListController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vk0-lk-LaW" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="ConferenceListController" autoresizesArchivedViewToFullSize="NO" title="Konferencje PJWSTK 1" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vk0-lk-LaW" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBY-HN-gzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2828" y="260"/>
+            <point key="canvasLocation" x="1950" y="260"/>
         </scene>
-        <!--Events List View Controller-->
+        <!--Konferencje PJWSTK 2-->
         <scene sceneID="39z-zA-6iG">
             <objects>
-                <viewController id="y0R-6w-6cu" customClass="EventsListViewController" sceneMemberID="viewController">
+                <viewController title="Konferencje PJWSTK 2" id="y0R-6w-6cu" customClass="EventsPagerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mer-bn-QJL"/>
                         <viewControllerLayoutGuide type="bottom" id="sQX-d2-h6g"/>
@@ -178,10 +213,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="AOa-gh-1ru"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNC-xf-VEB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2352" y="1160"/>
+            <point key="canvasLocation" x="3264" y="1140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yMY-sh-Pr1">
@@ -200,6 +236,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15t-6X-m1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="700" y="1140"/>
+        </scene>
+        <!--Konferencje PJWSTK 3-->
+        <scene sceneID="IaE-yr-9Ee">
+            <objects>
+                <navigationController title="Konferencje PJWSTK 3" automaticallyAdjustsScrollViewInsets="NO" id="56O-M5-VkR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0qf-oa-lVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="mR5-RC-XaK">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="y0R-6w-6cu" kind="relationship" relationship="rootViewController" id="6qS-hO-zK9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ww-UO-DOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2452" y="1140"/>
         </scene>
     </scenes>
 </document>

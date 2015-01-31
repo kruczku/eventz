@@ -14,6 +14,9 @@
 
 @implementation ConferenceContentViewController
 
+- (IBAction)onLabelClicked:(id)sender {
+    NSLog(@"label clicked");
+}
 
 -(id) initWithConference:(Conference*) conf
 {
