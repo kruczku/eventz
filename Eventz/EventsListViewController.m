@@ -22,14 +22,34 @@
     NSURL *jsonURL = [NSURL URLWithString:@"http://json.rafalmanka.pl/proh/conferences"];
     [eventsList getJSONData:jsonURL];
     NSDictionary *conferences = [[eventsList events] dictionaryWithValuesForKeys:@[@"konferencje"]];
+    self.ConferencesList = [[NSMutableArray alloc] init];
+    if ([[conferences allValues] count] > 0)
+    {
+        
+        for (int i = 0 ; i < [[[conferences allValues]objectAtIndex:0] count]; i++)
+        {
+            [self.ConferencesList addObject: [[Conference alloc] initWithDictionary:[[[conferences allValues] objectAtIndex:0] objectAtIndex:i]]];
+        }
+    }
+    self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ConferenceListController"];
+    self.pageViewController.dataSource = self;
     
-    UIScrollView *scrollView = [self scrollView];
-    UILabel *titleLabel = [self titleLabel];
-    UILabel *descriptionLabel = [self descriptionLabel];
-    [self setupScrollView:scrollView withConferences:conferences];
-    [self initFirstEvent:titleLabel andDescription:descriptionLabel withConferences:conferences];
+    
+    ConferenceContentViewController *startingViewController = [self viewControllerAtIndex:0];
+    NSArray *viewControlers = @[startingViewController];
+    
+    [self.pageViewController setViewControllers:viewControlers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    
+    
+    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 30);
+    
+    
+    
+    [self addChildViewController:_pageViewController];
+    [self.view addSubview:_pageViewController.view];
+    [self.pageViewController didMoveToParentViewController:self];
+    
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -39,40 +59,47 @@
     [self setEvents:[NSJSONSerialization JSONObjectWithData:jsonFile options:NSJSONReadingMutableContainers error:nil]];
 }
 
-- (void) setupScrollView:(UIScrollView*)scrollView withConferences:(NSDictionary*)conferences {
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
+{
+    NSUInteger index = ((ConferenceContentViewController*) viewController).pageIndex;
     
-    int x = 0;
-    for (NSDictionary* conference in [conferences valueForKey:@"konferencje"])
-    {
-        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(x, 20, 300, 30)];
-        [button setTitle:[NSString stringWithFormat:[conference  objectForKey:@"temat"]] forState:UIControlStateNormal];
-        
-        [scrollView addSubview:button];
-        x += button.frame.size.width;
+    if ((index == 0) || (index == NSNotFound)) {
+        return nil;
     }
     
-    scrollView.contentSize = CGSizeMake(x*2, scrollView.frame.size.height);
-    scrollView.backgroundColor = [UIColor redColor];
+    index--;
+    return [self viewControllerAtIndex:index];
 }
 
-- (void) initFirstEvent:(UILabel*)titleLabel andDescription:(UILabel*)descriptionLabel withConferences:(NSDictionary*)conferences {
-    NSString *firstEventTitle = [EventsListViewController getFirstEventTitle:conferences];
-    titleLabel.text = firstEventTitle;
-    NSString *firstEventDescription = [EventsListViewController getFirstEventDescription:conferences];
-    descriptionLabel.text = firstEventDescription;
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
+{
+    NSUInteger index = ((ConferenceContentViewController*) viewController).pageIndex;
+    
+    if (index == NSNotFound) {
+        return nil;
+    }
+    
+    index++;
+    if (index == [self.ConferencesList count]) {
+        return nil;
+    }
+    return [self viewControllerAtIndex:index];
 }
 
-+ (NSString*) getFirstEventTitle:(NSDictionary*)conferences {
-    NSDictionary *firstElement = [[[conferences allValues] objectAtIndex:0] objectAtIndex:0];
-    NSString *title = [firstElement valueForKey:@"temat"];
-    return title;
+- (ConferenceContentViewController *)viewControllerAtIndex:(NSUInteger)index
+{
+    if (([self.ConferencesList count] == 0) || (index >= [self.ConferencesList count])) {
+        return nil;
+    }
+    
+    // Create a new view controller and pass suitable data.
+    ConferenceContentViewController *conferenceContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ConferenceContentViewController"];
+    
+    conferenceContentViewController.DataContext = [self.ConferencesList objectAtIndex:index];
+    conferenceContentViewController.pageIndex = index;
+    return conferenceContentViewController;
 }
-
-+ (NSString*) getFirstEventDescription:(NSDictionary*)conferences {
-    NSDictionary *firstElement = [[[conferences allValues] objectAtIndex:0] objectAtIndex:0];
-    NSString *description = [firstElement valueForKey:@"opis"];
-    return description;
-}
-
 
 @end

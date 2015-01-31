@@ -7,17 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Conference.h"
+#import "ConferenceContentViewController.h"
 
-@interface EventsListViewController : UIViewController
+@interface EventsListViewController : UIViewController <UIPageViewControllerDataSource>
 
-@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
-@property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (nonatomic, assign) NSDictionary* events;
+@property (strong, nonatomic) UIPageViewController *pageViewController;
+@property (strong, nonatomic) NSMutableArray *ConferencesList;
 
 - (void) getJSONData:(NSURL*)jsonURL;
-- (void) setupScrollView:(UIScrollView*)scrollView withConferences:(NSDictionary*)conferences;
-- (void) initFirstEvent:(UILabel*)titleLabel andDescription:(UILabel*)descriptionLabel withConferences:(NSDictionary*)conferences;
-+ (NSString*) getFirstEventTitle:(NSDictionary*)conferences;
 
 @end

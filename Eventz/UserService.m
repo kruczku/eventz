@@ -41,7 +41,7 @@ NSString *endpoint = @"http://eventz-rafalmanka.rhcloud.com/rest/login/auth";
               withPassword:(NSString*)password {
    
     
-    
+    @try{
     mutableData = [[NSMutableData alloc] init];
     
     
@@ -57,6 +57,10 @@ NSString *endpoint = @"http://eventz-rafalmanka.rhcloud.com/rest/login/auth";
     [request setHTTPBody:postData];
     
     NSURLConnection *conn = [[NSURLConnection alloc]initWithRequest:request delegate:self];    
+    }
+    @catch (NSException* exception){
+        NSLog(@"%@", exception.reason);
+    }
     
 }
 

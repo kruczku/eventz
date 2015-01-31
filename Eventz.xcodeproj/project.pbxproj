@@ -21,6 +21,8 @@
 		CFA02BA11A4378F1005117EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA02BA01A4378F1005117EA /* Images.xcassets */; };
 		CFA02BA41A4378F1005117EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA02BA21A4378F1005117EA /* LaunchScreen.xib */; };
 		CFA02BB01A4378F1005117EA /* EventzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA02BAF1A4378F1005117EA /* EventzTests.m */; };
+		DB9A612A1A7C323300613D25 /* ConferenceContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9A61291A7C323300613D25 /* ConferenceContentViewController.m */; };
+		DBFBE82A1A7BB5CC00FF2E46 /* Conference.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFBE8291A7BB5CC00FF2E46 /* Conference.m */; };
 		EA2F866D1A5F170A00CE83D0 /* EventsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2F866C1A5F170900CE83D0 /* EventsListViewController.m */; };
 		EA2F866E1A5F170A00CE83D0 /* EventsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2F866C1A5F170900CE83D0 /* EventsListViewController.m */; };
 /* End PBXBuildFile section */
@@ -65,6 +67,10 @@
 		CFA02BA91A4378F1005117EA /* EventzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA02BAE1A4378F1005117EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFA02BAF1A4378F1005117EA /* EventzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventzTests.m; sourceTree = "<group>"; };
+		DB9A61281A7C323300613D25 /* ConferenceContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConferenceContentViewController.h; sourceTree = "<group>"; };
+		DB9A61291A7C323300613D25 /* ConferenceContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConferenceContentViewController.m; sourceTree = "<group>"; };
+		DBFBE8281A7BB5CC00FF2E46 /* Conference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conference.h; sourceTree = "<group>"; };
+		DBFBE8291A7BB5CC00FF2E46 /* Conference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conference.m; sourceTree = "<group>"; };
 		EA2F866B1A5F170900CE83D0 /* EventsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsListViewController.h; sourceTree = "<group>"; };
 		EA2F866C1A5F170900CE83D0 /* EventsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +109,8 @@
 				EA2F866C1A5F170900CE83D0 /* EventsListViewController.m */,
 				CFA02B9A1A4378F1005117EA /* LoginViewController.h */,
 				CFA02B9B1A4378F1005117EA /* LoginViewController.m */,
+				DB9A61281A7C323300613D25 /* ConferenceContentViewController.h */,
+				DB9A61291A7C323300613D25 /* ConferenceContentViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -122,6 +130,8 @@
 				CF9995E61A4F6EEC005C863D /* Response */,
 				CF79319D1A455DE7002DD617 /* User.h */,
 				CF79319E1A455DF6002DD617 /* User.m */,
+				DBFBE8281A7BB5CC00FF2E46 /* Conference.h */,
+				DBFBE8291A7BB5CC00FF2E46 /* Conference.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -378,9 +388,11 @@
 				CFA02B9C1A4378F1005117EA /* LoginViewController.m in Sources */,
 				CFA02B991A4378F1005117EA /* AppDelegate.m in Sources */,
 				CF7931A61A4561FB002DD617 /* UIUtils.m in Sources */,
+				DBFBE82A1A7BB5CC00FF2E46 /* Conference.m in Sources */,
 				CF7931A31A456120002DD617 /* StringUtils.m in Sources */,
 				EA2F866D1A5F170A00CE83D0 /* EventsListViewController.m in Sources */,
 				CFA02B961A4378F1005117EA /* main.m in Sources */,
+				DB9A612A1A7C323300613D25 /* ConferenceContentViewController.m in Sources */,
 				CF9995EC1A4F70E7005C863D /* ResponseBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
