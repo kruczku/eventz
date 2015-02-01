@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B6C1DBA4C74729B8C642CA7 /* libPods-Eventz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9764103D9F425B4E2F46842E /* libPods-Eventz.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		B8A64D8B1A7E359500F64FA0 /* Lecture.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A64D8A1A7E359500F64FA0 /* Lecture.m */; };
 		CF302A501A7D355E00B0AB45 /* ConferenceDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF302A4F1A7D355E00B0AB45 /* ConferenceDetailsViewController.m */; };
 		CF79319B1A455CCB002DD617 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = CF79319A1A455CCB002DD617 /* UserService.m */; };
 		CF79319F1A455DF6002DD617 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CF79319E1A455DF6002DD617 /* User.m */; };
@@ -42,6 +43,8 @@
 		1B5F9E9ED28579F9E90A3507 /* Pods-Eventz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eventz/Pods-Eventz.debug.xcconfig"; sourceTree = "<group>"; };
 		5AC9B90136E848486D5014C0 /* Pods-Eventz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eventz/Pods-Eventz.release.xcconfig"; sourceTree = "<group>"; };
 		9764103D9F425B4E2F46842E /* libPods-Eventz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Eventz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A64D891A7E358100F64FA0 /* Lecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lecture.h; sourceTree = "<group>"; };
+		B8A64D8A1A7E359500F64FA0 /* Lecture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lecture.m; sourceTree = "<group>"; };
 		CF302A4E1A7D355E00B0AB45 /* ConferenceDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConferenceDetailsViewController.h; sourceTree = "<group>"; };
 		CF302A4F1A7D355E00B0AB45 /* ConferenceDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConferenceDetailsViewController.m; sourceTree = "<group>"; };
 		CF79319A1A455CCB002DD617 /* UserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 		CF7931981A455C7C002DD617 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B8A64D8A1A7E359500F64FA0 /* Lecture.m */,
+				B8A64D891A7E358100F64FA0 /* Lecture.h */,
 				CF9995E61A4F6EEC005C863D /* Response */,
 				CF79319D1A455DE7002DD617 /* User.h */,
 				CF79319E1A455DF6002DD617 /* User.m */,
@@ -393,6 +398,7 @@
 				CFA02B9C1A4378F1005117EA /* LoginViewController.m in Sources */,
 				CFA02B991A4378F1005117EA /* AppDelegate.m in Sources */,
 				CF7931A61A4561FB002DD617 /* UIUtils.m in Sources */,
+				B8A64D8B1A7E359500F64FA0 /* Lecture.m in Sources */,
 				DBFBE82A1A7BB5CC00FF2E46 /* Conference.m in Sources */,
 				CF7931A31A456120002DD617 /* StringUtils.m in Sources */,
 				EA2F866D1A5F170A00CE83D0 /* EventsPagerViewController.m in Sources */,
