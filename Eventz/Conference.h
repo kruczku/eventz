@@ -12,9 +12,11 @@
 
 @property NSString* Subject;
 @property NSString* DateStart;
+@property NSString* DateEnd;
 @property NSString* Location;
 @property NSString* Partners;
 @property NSString* Description;
+@property NSString* ImageURI;
 @property NSMutableArray* Lectures;
 
 - (id) initWithDictionary:(NSDictionary*) dict;

@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.lbConferenceTitle.text = self.DataContext.Subject;
+    self.tfPlace.text = self.DataContext.Location;
+    NSString * duration = self.DataContext.DateStart;
+    if (![self.DataContext.DateEnd isEqualToString: self.DataContext.DateStart]){
+        duration = [duration stringByAppendingString:@" - "];
+        duration = [duration stringByAppendingString:self.DataContext.DateEnd ];
+    }
+    self.tfTime.text = duration;
+
 }
 
 - (void)didReceiveMemoryWarning {

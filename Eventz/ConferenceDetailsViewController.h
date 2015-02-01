@@ -13,5 +13,9 @@
 @interface ConferenceDetailsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *lbConferenceTitle;
 @property (nonatomic, retain)Conference *DataContext;
+@property (weak, nonatomic) IBOutlet UITableViewCell *tabLectures;
+@property (weak, nonatomic) IBOutlet UITextField *tfPlace;
+@property (weak, nonatomic) IBOutlet UITextField *tfTime;
+@property (weak, nonatomic) IBOutlet UIImageView *imgImage;
 
 @end
