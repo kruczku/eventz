@@ -46,7 +46,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([[segue identifier] isEqualToString:@"show-conf-details"]) {
-        ConferenceDetailsViewController *senderEntry = (ConferenceDetailsViewController*)sender;
+        ConferenceDetailsViewController *senderEntry = (ConferenceDetailsViewController*)segue.destinationViewController;
         senderEntry.DataContext = self.DataContext;
         
 //        [segue destinationViewController].delegate = self;
