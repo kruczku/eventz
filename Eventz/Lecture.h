@@ -13,14 +13,12 @@
 
 @property NSString* Subject;
 @property int Tickets;
-@property NSDate* DateStart;
-@property NSDate* DateEnd;
+@property NSString* TimeStart;
+@property NSString* TimeEnd;
 @property NSString* Location;
-@property NSArray* Tags;
+@property NSString* Tags;
 @property NSString* Description;
 @property NSString* Speaker;
 
-
-
-
+- (id) initWithDictionary:(NSDictionary*) dict;
 @end

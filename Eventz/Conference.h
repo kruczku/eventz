@@ -15,6 +15,7 @@
 @property NSString* Location;
 @property NSString* Partners;
 @property NSString* Description;
+@property NSMutableArray* Lectures;
 
 - (id) initWithDictionary:(NSDictionary*) dict;
 @end

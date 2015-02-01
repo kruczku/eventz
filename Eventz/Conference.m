@@ -7,7 +7,7 @@
 //
 
 #import "Conference.h"
-
+#import "Lecture.h"
 @implementation Conference
 
 
@@ -20,6 +20,15 @@
         self.Location = [Conference getEventLocation:dict];
         self.Partners = [Conference getEventPartners:dict];
         self.Subject = [Conference getEventSubject:dict];
+        if ([Conference HasLectures:dict])
+        {
+            self.Lectures = [[NSMutableArray alloc] init];
+            for (int i = 0; i < [[dict valueForKey:@"zajecia"]count]; i++)
+            {
+                [self.Lectures addObject:[[Lecture alloc] initWithDictionary:[[dict valueForKey:@"zajecia"] objectAtIndex:i]]];
+            }
+        }
+        
     }
     return self;
 }
@@ -49,6 +58,16 @@
 + (NSString*) getEventPartners:(NSDictionary*)conferences{
     NSString *description = [conferences valueForKey:@"partnerzy"];
     return description;
+}
+
++ (BOOL) HasLectures:(NSDictionary*) dict
+{
+    if ( [dict objectForKey:@"zajecia"] == nil){
+        return false;
+    }
+    else{
+        return true;
+    }
 }
 
 @end
