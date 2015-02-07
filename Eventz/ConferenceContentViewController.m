@@ -38,6 +38,8 @@
     [self.tvDescription setFont:[UIFont boldSystemFontOfSize:18]];
     self.Location.text = self.DataContext.Location;
     self.Partners.text = self.DataContext.Partners;
+    
+    [self setupDetailsButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,6 +56,16 @@
         return;
 
     }
+}
+
+- (void) setupDetailsButton{
+    UIButton* btn = [self btnDetails];
+    btn.frame = CGRectMake(100, 100, 100,50);
+    btn.frame = CGRectMake(100.0, 100.0, 120.0, 50.0);
+    btn.clipsToBounds = YES;
+    btn.layer.cornerRadius = 7;
+    btn.layer.borderWidth=1.0f;
+    btn.layer.borderColor=[UIColor colorWithRed:18.0/255.0f green:77.0/255.0f  blue:18.0/255.0f alpha:0.7].CGColor;
 }
 
 @end

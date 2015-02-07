@@ -16,6 +16,7 @@
 @property (strong, nonatomic) IBOutlet UITextView *tvDescription;
 
 @property (weak, nonatomic) IBOutlet UILabel *Partners;
+@property (strong, nonatomic) IBOutlet UIButton *btnDetails;
 @property NSUInteger pageIndex;
 @property (nonatomic, retain)Conference *DataContext;
 

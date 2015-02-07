@@ -43,7 +43,6 @@ UserService *userService;
  Checks if login and password are in correct format
  */
 - (IBAction)clickLoginButton:(id)sender {
-
     NSString *login = [self.tfLogin text];
     UserService *service = [self getUserService];
     BOOL isCorrectLogin = [service isValidLogin:login];

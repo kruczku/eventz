@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cTp-r1-R5n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cTp-r1-R5n">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -28,9 +28,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="qweasd" borderStyle="roundedRect" placeholder="Hasło" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZQV-nT-ITa">
+                                <rect key="frame" x="32" y="229" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I70-qb-bCk">
                                 <rect key="frame" x="16" y="331" width="568" height="30"/>
-                                <color key="backgroundColor" red="0.19164186921309856" green="0.58575148809523814" blue="0.15966823763387247" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.19215686274509805" green="0.58431372549019611" blue="0.16078431372549021" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Zaloguj">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -39,11 +44,6 @@
                                     <action selector="clickLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QPf-bh-tBa"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="qweasd" borderStyle="roundedRect" placeholder="Hasło" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZQV-nT-ITa">
-                                <rect key="frame" x="32" y="229" width="568" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -138,6 +138,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kF6-MW-q3C">
+                                <rect key="frame" x="16" y="562" width="336" height="30"/>
+                                <color key="backgroundColor" red="0.087161029892046701" green="0.65812421085858586" blue="0.10365729006039646" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Szczegoly">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3Mo-Nj-ouL" kind="presentation" id="fR5-Bw-Pcs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -148,6 +159,7 @@
                         <outlet property="Location" destination="XPD-Sv-KUx" id="N2z-zr-0wi"/>
                         <outlet property="Partners" destination="gIu-jL-vSb" id="Imd-TR-Gyx"/>
                         <outlet property="Subject" destination="E0H-Jk-ql9" id="i5V-VK-Vfk"/>
+                        <outlet property="btnDetails" destination="kF6-MW-q3C" id="Vxk-cT-ueY"/>
                         <outlet property="tvDescription" destination="XF4-0x-O6G" id="hU8-1Q-FrK"/>
                     </connections>
                 </viewController>
@@ -329,4 +341,7 @@
             <point key="canvasLocation" x="2452" y="1140"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fR5-Bw-Pcs"/>
+    </inferredMetricsTieBreakers>
 </document>
